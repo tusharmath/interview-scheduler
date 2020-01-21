@@ -1,0 +1,52 @@
+{
+  "author": "Tushar Mathur <tusharmath@gmail.com>",
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "description": "schedules interviews internally within the team",
+  "keywords": [
+    "job",
+    "scheduler",
+    "interview"
+  ],
+  "license": "ISC",
+  "main": "src/State.js",
+  "name": "interview-scheduler",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tusharmath/interview-scheduler.git"
+  },
+  "scripts": {
+    "create-docs": "typedoc",
+    "lint": "tslint --project .",
+    "prepublishOnly": "tsc -d",
+    "prettier": "git ls-files | grep -E '.*\\.(ts|md|json)$' | xargs prettier --write --config=.prettierrc",
+    "semantic-release": "semantic-release",
+    "test": "mocha test/**/*.test.js",
+    "travis-deploy-once": "travis-deploy-once --pro"
+  },
+  "version": "0.0.0-development",
+  "devDependencies": {
+    "@types/chai": "^4.2.7",
+    "@types/chai-spies": "^1.0.1",
+    "@types/mocha": "^5.2.7",
+    "@types/node": "^13.1.6",
+    "chai": "^4.2.0",
+    "chai-spies": "^1.0.0",
+    "cz-conventional-changelog": "^3.0.2",
+    "mocha": "^7.0.0",
+    "prettier": "^1.19.1",
+    "semantic-release": "^16.0.1",
+    "travis-deploy-once": "^5.0.11",
+    "tslint": "^5.20.1",
+    "tslint-config-prettier": "^1.18.0",
+    "typedoc": "^0.15.8",
+    "typescript": "^3.7.4",
+    "typescript-tslint-plugin": "^0.5.5"
+  },
+  "dependencies": {
+    "guid-typescript": "^1.0.9"
+  }
+}

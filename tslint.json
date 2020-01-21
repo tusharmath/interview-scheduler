@@ -1,0 +1,30 @@
+{
+  "defaultSeverity": "error",
+  "extends": ["tslint:all", "tslint-config-prettier"],
+  "rules": {
+    "no-unbound-method": {
+      "options": ["ignore-static"]
+    },
+    "typedef": [true, "call-signature", "parameter", "arrow-call-signature"],
+    "file-name-casing": [true, "pascal-case"],
+    "no-parameter-properties": false,
+    "no-implicit-dependencies": [true, "dev"],
+    "interface-over-type-literal": false,
+    "completed-docs": [
+      false,
+      {
+        "enums": true,
+        "functions": true,
+        "methods": true,
+        "properties": true,
+        "classes": true,
+        "enum-members": true,
+        "interfaces": true,
+        "namespaces": true,
+        "types": true,
+        "variables": true
+      }
+    ]
+  },
+  "rulesDirectory": []
+}

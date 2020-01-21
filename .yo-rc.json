@@ -1,0 +1,9 @@
+{
+  "generator-kips": {
+    "promptValues": {
+      "projectName": "interview-scheduler",
+      "projectDescription": "schedules interviews internally within the team",
+      "keywords": "job scheduler interview"
+    }
+  }
+}
